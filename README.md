@@ -18,15 +18,14 @@ Instead, the site recreates the wordmark as real HTML/CSS text (`.wordmark` in t
 - **BBB**: A+ rating, accredited since 10/16/2023; 0 reviews listed
 - **Services**: residential & commercial framing, electrical, concrete, tile, bathroom & kitchen remodeling, and general home improvements — BBB's own service description, used verbatim as the site's 6 service rows
 - **No real website found**: only presence is the BBB profile and the Facebook page (facebook.com/p/Conley-General-Contractors-Inc-100075441270683). A domain called `conleycontractors.com` turned up in search results under a "Project Gallery" title, but it doesn't resolve (DNS lookup fails) — not confirmed to belong to this business at all, so it isn't used as a talking point on the call.
-- **No email found** — contact section only lists phone, Facebook, and the BBB-listed address.
+- **Email**: conleygeneralcontractors@gmail.com — confirmed by Kyle
 - **Service area**: site says "Portsmouth and the surrounding Scioto County area" — inferred from the business's location, not directly confirmed by Jeffrey; worth confirming on the call.
 
 ## Open questions for the call
 
 1. Can he send the actual logo file (not just what's on Facebook) so the recreated wordmark can be swapped for the real one?
 2. Real service area — just Portsmouth, or wider Scioto County / neighboring counties?
-3. Whether he wants a business email set up (none found anywhere) for the contact form to send to.
-4. Confirm the 0-reviews BBB listing isn't hiding a Google/Facebook review presence worth featuring.
+3. Confirm the 0-reviews BBB listing isn't hiding a Google/Facebook review presence worth featuring.
 
 ## Stack
 
@@ -38,6 +37,6 @@ Local preview: `python3 -m http.server 8967` (also wired into `.claude/launch.js
 
 1. Get the real logo file from Jeffrey and swap it in for the recreated text wordmark.
 2. Buy a domain (~$12–15/yr) if Jeffrey doesn't already own one.
-3. Swap the Formspree placeholder for a real form ID.
-4. Confirm service area and whether he wants an email address set up.
-5. Deploy (GitHub Pages is what the rest of the pipeline uses).
+3. Swap the Formspree placeholder for a real form ID (route submissions to conleygeneralcontractors@gmail.com).
+4. Confirm service area.
+5. Deploy (GitHub Pages is what the rest of the pipeline uses — already live at smctippa.github.io/conley-general-contractors).
